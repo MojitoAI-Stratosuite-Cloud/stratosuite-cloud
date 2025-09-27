@@ -76,28 +76,6 @@ const TryForFree = () => {
         </form>
       </div>
       
-      {/* <div className={styles.footer}>
-        <div className={styles.footerContent}>
-          <p className={styles.footerText}>
-            Starting at $25/month.* Stratosuite may establish general practices and limits concerning use of the Stratosuite 
-            Starter service, including, without limitation the maximum number of combined Leads and Contacts, which is 
-            limited to 2,000 leads and/or contacts and 10 emails per day for the Stratosuite Starter Trial Edition.
-          </p>
-          <p className={styles.footerSubtext}>
-            *USD/user/month (billed monthly or annually).
-          </p>
-        </div>
-        
-        <div className={styles.trustBadge}>
-          <div className={styles.trustIcon}>🛡️</div>
-          <div className={styles.trustText}>
-            <div>TRUSTe</div>
-            <div>Verified Privacy</div>
-            <div>Powered by TrustArc</div>
-          </div>
-        </div>
-      </div> */}
-      
       <div className={styles.globalFooter}>
         <div className={styles.globalFooterContent}>
           <div className={styles.worldwideDropdown}>
