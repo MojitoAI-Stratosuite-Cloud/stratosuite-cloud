@@ -122,7 +122,6 @@ const WatchDemo = () => {
                 <option value="201-1000">201-1000</option>
                 <option value="1000+">1000+</option>
               </select>
-              {!formData.employees && <div className={styles.errorIndicator}>⚠</div>}
             </div>
             
             <div className={styles.inputRow}>
