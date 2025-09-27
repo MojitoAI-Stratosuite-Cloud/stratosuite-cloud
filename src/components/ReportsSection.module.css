@@ -1,0 +1,112 @@
+.reportsSection {
+  background: linear-gradient(135deg, hsl(220 20% 98%) 0%, hsl(var(--background)) 100%);
+  padding: 6rem 2rem;
+}
+
+.reportsContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  color: hsl(var(--primary));
+  margin: 0 0 2rem 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.seeAllButton {
+  padding: 0.875rem 2rem;
+  background: transparent;
+  color: hsl(var(--primary));
+  border: 1px solid hsl(var(--primary));
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  margin-bottom: 4rem;
+}
+
+.seeAllButton:hover {
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+.reportsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.reportCard {
+  background: white;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: var(--transition-smooth);
+}
+
+.reportCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.reportImage {
+  height: 200px;
+  background: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-light)));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.reportIcon {
+  font-size: 4rem;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.reportContent {
+  padding: 2rem;
+  text-align: left;
+}
+
+.reportTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: hsl(var(--foreground));
+  margin: 0 0 1.5rem 0;
+  line-height: 1.4;
+}
+
+.reportLink {
+  color: hsl(var(--primary));
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: var(--transition-smooth);
+}
+
+.reportLink:hover {
+  border-bottom-color: hsl(var(--primary));
+}
+
+@media (max-width: 1024px) {
+  .reportsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .reportContent {
+    padding: 1.5rem;
+  }
+}

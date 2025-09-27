@@ -1,0 +1,129 @@
+.testimonialsSection {
+  background: white;
+  padding: 6rem 2rem;
+}
+
+.testimonialsContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  color: hsl(var(--primary));
+  margin: 0 0 2rem 0;
+}
+
+.sectionSubtitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+  margin: 0 0 1rem 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sectionDescription {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: hsl(var(--muted-foreground));
+  max-width: 600px;
+  margin: 0 auto 4rem auto;
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.testimonialCard {
+  background: hsl(var(--primary));
+  color: white;
+  border-radius: 1.5rem;
+  padding: 3rem 2rem;
+  text-align: left;
+  transition: var(--transition-smooth);
+}
+
+.testimonialCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.cardHeader {
+  margin-bottom: 2rem;
+}
+
+.companyName {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.9;
+}
+
+.metricDisplay {
+  margin-bottom: 2rem;
+}
+
+.metric {
+  font-size: 4rem;
+  font-weight: bold;
+  display: block;
+  line-height: 1;
+}
+
+.metricDescription {
+  font-size: 1.125rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.testimonialDetail {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 2rem 0;
+  opacity: 0.95;
+}
+
+.readMoreLink {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: var(--transition-smooth);
+}
+
+.readMoreLink:hover {
+  border-bottom-color: white;
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .testimonialsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .sectionSubtitle {
+    font-size: 1.25rem;
+  }
+  
+  .testimonialCard {
+    padding: 2rem 1.5rem;
+  }
+  
+  .metric {
+    font-size: 3rem;
+  }
+}
