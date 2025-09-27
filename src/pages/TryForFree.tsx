@@ -76,7 +76,7 @@ const TryForFree = () => {
         </form>
       </div>
       
-      <div className={styles.footer}>
+      {/* <div className={styles.footer}>
         <div className={styles.footerContent}>
           <p className={styles.footerText}>
             Starting at $25/month.* Stratosuite may establish general practices and limits concerning use of the Stratosuite 
@@ -96,7 +96,7 @@ const TryForFree = () => {
             <div>Powered by TrustArc</div>
           </div>
         </div>
-      </div>
+      </div> */}
       
       <div className={styles.globalFooter}>
         <div className={styles.globalFooterContent}>
