@@ -57,22 +57,6 @@ const WatchDemo = () => {
         <p className={styles.contactInfo}>
           Questions? Call us at 1-800-667-6389.
         </p>
-        
-        <div className={styles.illustrationContainer}>
-          <div className={styles.businessOwner}>
-            <div className={styles.personImage}></div>
-            <div className={styles.statsCard}>
-              <div className={styles.statNumber}>25%</div>
-              <div className={styles.statLabel}>Increase in revenue*</div>
-            </div>
-          </div>
-          
-          <div className={styles.productTags}>
-            <span className={styles.tag} style={{ background: '#00D4AA' }}>💼 sales</span>
-            <span className={styles.tag} style={{ background: '#FF6B6B' }}>❤️ service</span>
-            <span className={styles.tag} style={{ background: '#FFB800' }}>📊 marketing</span>
-          </div>
-        </div>
       </div>
       
       <div className={styles.rightSection}>
@@ -202,15 +186,6 @@ const WatchDemo = () => {
         
         <div className={styles.copyright}>
           © Copyright 2025 Stratosuite, Inc. All rights reserved. Various trademarks held by their respective owners. Stratosuite, Inc. Stratosuite Tower, 415 Mission Street, 3rd Floor, San Francisco, CA 94105, United States
-        </div>
-      </div>
-      
-      <div className={styles.trustBadge}>
-        <div className={styles.trustIcon}>🛡️</div>
-        <div className={styles.trustText}>
-          <div>TRUSTe</div>
-          <div>Verified Privacy</div>
-          <div>Powered by TrustArc</div>
         </div>
       </div>
     </div>
