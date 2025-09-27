@@ -1,0 +1,166 @@
+.productSection {
+  padding: 6rem 2rem;
+  background: white;
+}
+
+.productContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+  color: hsl(210 100% 25%);
+}
+
+.sectionSubtitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0 0 4rem 0;
+  line-height: 1.2;
+  color: hsl(210 100% 25%);
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.productCard {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: var(--shadow-card);
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  color: white;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.productCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.productCard.agentforce {
+  background: hsl(var(--agent-purple));
+}
+
+.productCard.smallBusiness {
+  background: hsl(var(--small-business-teal));
+}
+
+.productCard.sales {
+  background: hsl(var(--sales-green));
+}
+
+.productCard.service {
+  background: hsl(var(--service-pink));
+}
+
+.productCard.marketing {
+  background: hsl(var(--marketing-orange));
+}
+
+.productCard.commerce {
+  background: hsl(var(--commerce-green));
+}
+
+.productCard.ai {
+  background: hsl(var(--ai-blue));
+}
+
+.productCard.dataCloud {
+  background: hsl(var(--data-purple));
+}
+
+.cardContent {
+  flex: 1;
+}
+
+.cardTitle {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+}
+
+.cardDescription {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.cardLink {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: border-color 0.2s;
+}
+
+.cardLink:hover {
+  border-color: white;
+}
+
+.cardIcon {
+  width: 3rem;
+  height: 3rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.allPricing {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.allPricingButton {
+  padding: 0.875rem 2rem;
+  background: transparent;
+  color: hsl(var(--primary));
+  border: 1px solid hsl(var(--primary));
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.allPricingButton:hover {
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+@media (max-width: 768px) {
+  .productGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .sectionTitle,
+  .sectionSubtitle {
+    font-size: 2rem;
+  }
+}

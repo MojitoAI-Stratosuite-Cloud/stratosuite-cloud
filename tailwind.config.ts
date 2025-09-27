@@ -22,6 +22,7 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -47,16 +48,35 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
-        },
+        // Stratosuite Product Colors
+        "agent-purple": "hsl(var(--agent-purple))",
+        "small-business-teal": "hsl(var(--small-business-teal))",
+        "sales-green": "hsl(var(--sales-green))",
+        "service-pink": "hsl(var(--service-pink))",
+        "marketing-orange": "hsl(var(--marketing-orange))",
+        "commerce-green": "hsl(var(--commerce-green))",
+        "ai-blue": "hsl(var(--ai-blue))",
+        "data-purple": "hsl(var(--data-purple))",
+        "platform-indigo": "hsl(var(--platform-indigo))",
+        "slack-purple": "hsl(var(--slack-purple))",
+        "analytics-red": "hsl(var(--analytics-red))",
+        "mulesoft-blue": "hsl(var(--mulesoft-blue))",
+        "heroku-purple": "hsl(var(--heroku-purple))",
+        "success-teal": "hsl(var(--success-teal))",
+      },
+      backgroundImage: {
+        "gradient-hero": "var(--gradient-hero)",
+        "gradient-purple": "var(--gradient-purple)",
+        "gradient-blue": "var(--gradient-blue)",
+        "gradient-teal": "var(--gradient-teal)",
+      },
+      boxShadow: {
+        "card": "var(--shadow-card)",
+        "card-hover": "var(--shadow-card-hover)",
+        "button": "var(--shadow-button)",
+      },
+      transitionProperty: {
+        "smooth": "var(--transition-smooth)",
       },
       borderRadius: {
         lg: "var(--radius)",

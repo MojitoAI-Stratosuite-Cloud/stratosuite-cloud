@@ -1,0 +1,153 @@
+.integrationSection {
+  padding: 6rem 2rem;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.integrationContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0 0 2rem 0;
+  line-height: 1.2;
+  color: hsl(210 100% 25%);
+}
+
+.sectionDescription {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: hsl(var(--muted-foreground));
+  margin: 0 0 3rem 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.appLink {
+  color: hsl(var(--primary));
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.appLink:hover {
+  text-decoration: underline;
+}
+
+.browseButton {
+  padding: 0.875rem 2rem;
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow-button);
+  margin-bottom: 4rem;
+}
+
+.browseButton:hover {
+  background: hsl(var(--primary-hover));
+}
+
+.appShowcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+  align-items: center;
+}
+
+.appIcon {
+  width: 80px;
+  height: 80px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin: 0 auto;
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.appIcon:hover {
+  transform: translateY(-4px);
+}
+
+.appIcon.five9 {
+  background: hsl(var(--ai-blue));
+}
+
+.appIcon.zoom {
+  background: hsl(var(--ai-blue));
+}
+
+.appIcon.linkedin {
+  background: hsl(var(--ai-blue));
+}
+
+.appIcon.dropbox {
+  background: hsl(210 100% 25%);
+}
+
+.appIcon.panda {
+  background: hsl(var(--analytics-red));
+}
+
+.appIcon.oce {
+  background: hsl(var(--agent-purple));
+}
+
+.appIcon.box {
+  background: hsl(var(--ai-blue));
+}
+
+.appIcon.servicemax {
+  background: hsl(var(--sales-green));
+}
+
+.appIcon.otter {
+  background: hsl(var(--mulesoft-blue));
+}
+
+.appIcon.conga {
+  background: hsl(var(--analytics-red));
+}
+
+.natureDecor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(135deg, hsl(120 60% 70%), hsl(140 80% 60%));
+  clip-path: ellipse(200px 100px at 150px 200px);
+  opacity: 0.1;
+}
+
+@media (max-width: 768px) {
+  .appShowcase {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    gap: 1rem;
+  }
+  
+  .appIcon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+}

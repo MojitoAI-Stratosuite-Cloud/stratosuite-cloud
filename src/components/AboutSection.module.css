@@ -1,0 +1,207 @@
+.aboutSection {
+  background: linear-gradient(135deg, hsl(220 20% 98%) 0%, hsl(var(--background)) 100%);
+  padding: 6rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.aboutContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.aboutLeft {
+  padding-right: 2rem;
+}
+
+.aboutTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0 0 2rem 0;
+  line-height: 1.2;
+  color: hsl(210 100% 25%);
+}
+
+.aboutDescription {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: hsl(var(--muted-foreground));
+  margin: 0 0 1.5rem 0;
+}
+
+.aboutLink {
+  color: hsl(var(--primary));
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.aboutLink:hover {
+  text-decoration: underline;
+}
+
+.aboutHighlight {
+  font-weight: 600;
+  color: hsl(210 100% 25%);
+}
+
+.aboutRight {
+  background: var(--gradient-purple);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.demoContainer {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 350px;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.demoHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.userAvatar {
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(135deg, hsl(25 100% 50%), hsl(45 100% 60%));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+}
+
+.userInfo {
+  flex: 1;
+}
+
+.userName {
+  font-weight: bold;
+  color: hsl(210 100% 25%);
+  margin: 0;
+}
+
+.userLocation {
+  color: hsl(var(--muted-foreground));
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.demoStats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.statBadge {
+  background: hsl(45 100% 85%);
+  color: hsl(45 100% 30%);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.roiText {
+  background: hsl(var(--primary));
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.demoChart {
+  background: linear-gradient(135deg, hsl(160 100% 90%), hsl(180 100% 95%));
+  height: 100px;
+  border-radius: 0.5rem;
+  position: relative;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chartLine {
+  color: hsl(160 100% 35%);
+  font-size: 2rem;
+}
+
+.testimonial {
+  background: hsl(200 100% 95%);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  font-style: italic;
+  color: hsl(200 100% 25%);
+  font-size: 0.875rem;
+}
+
+.playButtonDemo {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.playButtonDemo:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.landscape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center bottom;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .aboutContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .aboutLeft {
+    padding-right: 0;
+  }
+  
+  .aboutTitle {
+    font-size: 2rem;
+  }
+}

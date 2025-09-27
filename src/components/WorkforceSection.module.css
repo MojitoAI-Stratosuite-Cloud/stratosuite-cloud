@@ -1,0 +1,123 @@
+.workforceSection {
+  background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(220 20% 98%) 100%);
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.workforceContent {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.workforceTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.2;
+  color: hsl(210 100% 25%);
+}
+
+.workforceDescription {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: hsl(var(--muted-foreground));
+  margin: 0 0 3rem 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.workforceLink {
+  color: hsl(var(--primary));
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.workforceLink:hover {
+  text-decoration: underline;
+}
+
+.workforceActions {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 0 0 4rem 0;
+}
+
+.exploreButton {
+  padding: 0.875rem 2rem;
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow-button);
+}
+
+.exploreButton:hover {
+  background: hsl(var(--primary-hover));
+}
+
+.calculateButton {
+  padding: 0.875rem 2rem;
+  background: transparent;
+  color: hsl(var(--primary));
+  border: 1px solid hsl(var(--primary));
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.calculateButton:hover {
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+.trustedBy {
+  margin: 2rem 0 0 0;
+}
+
+.trustedTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: hsl(210 100% 25%);
+  margin: 0 0 2rem 0;
+}
+
+.logoGrid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.companyLogo {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: hsl(var(--muted-foreground));
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.companyLogo:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .workforceTitle {
+    font-size: 2rem;
+  }
+  
+  .workforceActions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logoGrid {
+    gap: 1.5rem;
+  }
+}

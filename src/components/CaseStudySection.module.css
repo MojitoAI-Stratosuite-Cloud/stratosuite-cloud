@@ -1,0 +1,190 @@
+.caseStudySection {
+  background: white;
+  padding: 6rem 2rem;
+}
+
+.caseStudyContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.caseStudyLeft {
+  background: var(--gradient-blue);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.videoContainer {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.statItem {
+  text-align: center;
+}
+
+.statNumber {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+}
+
+.statLabel {
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+.aiMascot {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.playButtonLarge {
+  width: 4rem;
+  height: 4rem;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  margin: 0 auto;
+}
+
+.playButtonLarge:hover {
+  transform: scale(1.1);
+}
+
+.caseStudyRight {
+  padding-left: 2rem;
+}
+
+.caseStudyTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.2;
+  color: hsl(210 100% 25%);
+}
+
+.caseStudyDescription {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: hsl(var(--muted-foreground));
+  margin: 0 0 2rem 0;
+}
+
+.caseStudyActions {
+  display: flex;
+  gap: 1rem;
+}
+
+.storiesButton {
+  padding: 0.875rem 2rem;
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow-button);
+}
+
+.storiesButton:hover {
+  background: hsl(var(--primary-hover));
+}
+
+.helpButton {
+  padding: 0.875rem 2rem;
+  background: transparent;
+  color: hsl(var(--primary));
+  border: 1px solid hsl(var(--primary));
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.helpButton:hover {
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+.closingSection {
+  background: linear-gradient(135deg, hsl(220 20% 98%) 0%, hsl(var(--background)) 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.closingTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  color: hsl(210 100% 25%);
+}
+
+.landscapeBottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: center bottom;
+  opacity: 0.2;
+}
+
+@media (max-width: 768px) {
+  .caseStudyContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .caseStudyRight {
+    padding-left: 0;
+  }
+  
+  .caseStudyTitle,
+  .closingTitle {
+    font-size: 2rem;
+  }
+}

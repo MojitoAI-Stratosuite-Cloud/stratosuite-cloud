@@ -1,0 +1,130 @@
+.industrySection {
+  padding: 6rem 2rem;
+  background: white;
+}
+
+.industryContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+  color: hsl(210 100% 25%);
+}
+
+.sectionSubtitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0 0 4rem 0;
+  line-height: 1.2;
+  color: hsl(210 100% 25%);
+}
+
+.industryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.industryCard {
+  background: white;
+  border: 1px solid hsl(var(--border));
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: left;
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.industryCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.industryCard::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  background: var(--gradient-purple);
+  border-radius: 100% 0 0 0;
+  opacity: 0.1;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+  color: hsl(210 100% 25%);
+}
+
+.cardDescription {
+  color: hsl(var(--muted-foreground));
+  line-height: 1.6;
+  margin: 0 0 2rem 0;
+}
+
+.cardLink {
+  color: hsl(var(--primary));
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.cardLink:hover {
+  border-color: hsl(var(--primary));
+}
+
+.cardIcon {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-card);
+  font-size: 1.25rem;
+  z-index: 1;
+}
+
+.seeAllButton {
+  padding: 0.875rem 2rem;
+  background: transparent;
+  color: hsl(var(--primary));
+  border: 1px solid hsl(var(--primary));
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  margin-top: 2rem;
+}
+
+.seeAllButton:hover {
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+@media (max-width: 768px) {
+  .industryGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .sectionTitle,
+  .sectionSubtitle {
+    font-size: 2rem;
+  }
+}

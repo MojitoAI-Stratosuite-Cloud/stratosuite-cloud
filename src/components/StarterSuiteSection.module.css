@@ -1,0 +1,189 @@
+.starterSection {
+  background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(220 20% 98%) 100%);
+  padding: 6rem 2rem;
+}
+
+.starterContent {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 0 4rem 0;
+  line-height: 1.2;
+  color: hsl(210 100% 25%);
+}
+
+.starterGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.starterLeft {
+  background: var(--gradient-teal);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.salesTag {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.mockupContainer {
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
+  margin-top: 2rem;
+}
+
+.mockupScreen {
+  background: linear-gradient(135deg, hsl(210 100% 95%) 0%, hsl(220 100% 98%) 100%);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  min-height: 200px;
+  position: relative;
+}
+
+.playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4rem;
+  height: 4rem;
+  background: hsl(210 100% 25%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.playButton:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.starterRight {
+  padding-left: 2rem;
+}
+
+.starterTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+  color: hsl(210 100% 25%);
+}
+
+.starterDescription {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: hsl(var(--muted-foreground));
+  margin: 0 0 1rem 0;
+}
+
+.pricingInfo {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 0 2rem 0;
+}
+
+.pricingAmount {
+  color: hsl(210 100% 25%);
+}
+
+.pricingLink {
+  color: hsl(var(--primary));
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.pricingLink:hover {
+  text-decoration: underline;
+}
+
+.tryButton {
+  padding: 0.875rem 2rem;
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow-button);
+  margin-bottom: 3rem;
+}
+
+.tryButton:hover {
+  background: hsl(var(--primary-hover));
+}
+
+.featuresList {
+  space-y: 2rem;
+}
+
+.featureItem {
+  border-left: 4px solid hsl(var(--primary));
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.featureTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: hsl(var(--primary));
+}
+
+.featureDescription {
+  color: hsl(var(--muted-foreground));
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .starterGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .starterRight {
+    padding-left: 0;
+  }
+  
+  .sectionTitle,
+  .starterTitle {
+    font-size: 2rem;
+  }
+}
