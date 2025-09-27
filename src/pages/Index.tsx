@@ -8,11 +8,8 @@ import AboutSection from '../components/AboutSection';
 import CaseStudySection from '../components/CaseStudySection';
 import IntegrationSection from '../components/IntegrationSection';
 import SupportSection from '../components/SupportSection';
-import LearningSection from '../components/LearningSection';
-import PartnershipSection from '../components/PartnershipSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import ReportsSection from '../components/ReportsSection';
-import GetStartedSection from '../components/GetStartedSection';
 import FinalCTASection from '../components/FinalCTASection';
 import Footer from '../components/Footer';
 
@@ -29,11 +26,8 @@ const Index = () => {
       <CaseStudySection />
       <IntegrationSection />
       <SupportSection />
-      <LearningSection />
-      <PartnershipSection />
       <TestimonialsSection />
       <ReportsSection />
-      <GetStartedSection />
       <FinalCTASection />
       <Footer />
     </>

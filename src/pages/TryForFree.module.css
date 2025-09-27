@@ -7,6 +7,7 @@
   justify-content: center;
   padding: 2rem;
   position: relative;
+  --footer-reserved: 220px;
 }
 
 .formCard {
@@ -17,7 +18,7 @@
   max-width: 500px;
   width: 100%;
   text-align: center;
-  margin-bottom: 4rem;
+  margin: 0 0 4rem;
 }
 
 .logoContainer {
@@ -52,13 +53,6 @@
   color: hsl(var(--foreground));
   margin: 0 0 1rem 0;
   font-weight: 600;
-}
-
-.description {
-  font-size: 1rem;
-  color: hsl(var(--muted-foreground));
-  margin: 0 0 2rem 0;
-  line-height: 1.5;
 }
 
 .form {
@@ -208,13 +202,22 @@
   margin: 0 auto;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    overflow-y: auto;
+    justify-content: flex-start;
+    padding-bottom: var(--footer-reserved);
+  }
+}
+
 @media (max-width: 768px) {
   .container {
-    padding: 1rem;
+    padding: 1rem 1rem var(--footer-reserved);
   }
   
   .formCard {
     padding: 2rem;
+    margin: 2rem 0 4rem;
   }
   
   .title {

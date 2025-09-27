@@ -6,7 +6,6 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div 
         className={styles.landscapeDecor}
-        style={{ backgroundImage: `url(${landscapeImage})` }}
       />
       
       <div className={styles.footerContent}>

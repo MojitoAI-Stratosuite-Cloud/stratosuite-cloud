@@ -142,7 +142,8 @@
   cursor: pointer;
   transition: var(--transition-smooth);
   box-shadow: var(--shadow-button);
-  margin-bottom: 3rem;
+  display: inline-block;
+  margin-bottom: 2rem;
 }
 
 .tryButton:hover {

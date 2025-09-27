@@ -14,11 +14,6 @@ const Header = () => {
           <ul className={styles.navLinks}>
             <li><a href="#" className={styles.navLink}>Products</a></li>
             <li><a href="#" className={styles.navLink}>Industries</a></li>
-            <li><a href="#" className={styles.navLink}>Customers</a></li>
-            <li><a href="#" className={styles.navLink}>Events</a></li>
-            <li><a href="#" className={styles.navLink}>Learning</a></li>
-            <li><a href="#" className={styles.navLink}>Support</a></li>
-            <li><a href="#" className={styles.navLink}>Company</a></li>
           </ul>
         </nav>
 

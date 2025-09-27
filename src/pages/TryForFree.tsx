@@ -31,10 +31,6 @@ const TryForFree = () => {
           30-day trial. No credit card required, no software to install. Just takes a few minutes.
         </p>
         
-        <p className={styles.description}>
-          Complete the form to start your free trial. Our team will be in touch to help you make the most of your trial.
-        </p>
-        
         <form onSubmit={handleSubmit} className={styles.form}>
           <input
             type="text"
@@ -74,28 +70,6 @@ const TryForFree = () => {
             1 of 3
           </div>
         </form>
-      </div>
-      
-      <div className={styles.footer}>
-        <div className={styles.footerContent}>
-          <p className={styles.footerText}>
-            Starting at $25/month.* Stratosuite may establish general practices and limits concerning use of the Stratosuite 
-            Starter service, including, without limitation the maximum number of combined Leads and Contacts, which is 
-            limited to 2,000 leads and/or contacts and 10 emails per day for the Stratosuite Starter Trial Edition.
-          </p>
-          <p className={styles.footerSubtext}>
-            *USD/user/month (billed monthly or annually).
-          </p>
-        </div>
-        
-        <div className={styles.trustBadge}>
-          <div className={styles.trustIcon}>🛡️</div>
-          <div className={styles.trustText}>
-            <div>TRUSTe</div>
-            <div>Verified Privacy</div>
-            <div>Powered by TrustArc</div>
-          </div>
-        </div>
       </div>
       
       <div className={styles.globalFooter}>
