@@ -7,6 +7,7 @@
   justify-content: center;
   padding: 2rem;
   position: relative;
+  --footer-reserved: 220px;
 }
 
 .formCard {
@@ -17,7 +18,7 @@
   max-width: 500px;
   width: 100%;
   text-align: center;
-  margin-bottom: 4rem;
+  margin: 0 0 4rem;
 }
 
 .logoContainer {
@@ -52,13 +53,6 @@
   color: hsl(var(--foreground));
   margin: 0 0 1rem 0;
   font-weight: 600;
-}
-
-.description {
-  font-size: 1rem;
-  color: hsl(var(--muted-foreground));
-  margin: 0 0 2rem 0;
-  line-height: 1.5;
 }
 
 .form {
@@ -107,6 +101,56 @@
   color: hsl(var(--muted-foreground));
   font-size: 0.875rem;
   margin-top: 1rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: 120px;
+  left: 0;
+  right: 0;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footerContent {
+  max-width: 600px;
+}
+
+.footerText {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  line-height: 1.4;
+  margin: 0 0 0.5rem 0;
+}
+
+.footerSubtext {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  margin: 0;
+}
+
+.trustBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trustIcon {
+  font-size: 1.5rem;
+}
+
+.trustText {
+  font-size: 0.75rem;
+  color: hsl(var(--foreground));
+  line-height: 1.2;
 }
 
 .globalFooter {
@@ -158,13 +202,22 @@
   margin: 0 auto;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    overflow-y: auto;
+    justify-content: flex-start;
+    padding-bottom: var(--footer-reserved);
+  }
+}
+
 @media (max-width: 768px) {
   .container {
-    padding: 1rem;
+    padding: 1rem 1rem var(--footer-reserved);
   }
   
   .formCard {
     padding: 2rem;
+    margin: 2rem 0 4rem;
   }
   
   .title {

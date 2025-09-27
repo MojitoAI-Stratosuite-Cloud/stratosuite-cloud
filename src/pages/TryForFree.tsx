@@ -31,10 +31,6 @@ const TryForFree = () => {
           30-day trial. No credit card required, no software to install. Just takes a few minutes.
         </p>
         
-        <p className={styles.description}>
-          Complete the form to start your free trial. Our team will be in touch to help you make the most of your trial.
-        </p>
-        
         <form onSubmit={handleSubmit} className={styles.form}>
           <input
             type="text"
