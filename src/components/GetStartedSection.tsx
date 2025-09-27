@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './GetStartedSection.module.css';
 import landscapeImage from '@/assets/landscape-decoration.png';
 
@@ -39,7 +40,7 @@ const GetStartedSection = () => {
               marketing, sales, and service.
             </p>
             
-            <button className={styles.tryButton}>Try for free</button>
+            <Link to="/try-for-free" className={styles.tryButton}>Try for free</Link>
             
             <div className={styles.stepsList}>
               <div className={styles.step}>

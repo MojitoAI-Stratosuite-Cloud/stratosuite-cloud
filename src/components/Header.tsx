@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -42,9 +43,9 @@ const Header = () => {
             🌐 Login
           </button>
           
-          <button className={`${styles.headerButton} ${styles.tryButton}`}>
+          <Link to="/try-for-free" className={`${styles.headerButton} ${styles.tryButton}`}>
             Try for free
-          </button>
+          </Link>
         </div>
       </div>
     </header>

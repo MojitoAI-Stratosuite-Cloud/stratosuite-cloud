@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './HeroSection.module.css';
 import aiAssistant from '@/assets/ai-assistant.png';
 import dashboardMockup from '@/assets/crm-dashboard.png';
@@ -67,8 +68,8 @@ const HeroSection = () => {
               whole new way.
             </p>
             <div className={styles.mainActions}>
-              <button className={styles.primaryButton}>Try for free</button>
-              <button className={styles.secondaryButton}>Watch demos</button>
+              <Link to="/try-for-free" className={styles.primaryButton}>Try for free</Link>
+              <Link to="/watch-demos" className={styles.secondaryButton}>Watch demos</Link>
             </div>
           </div>
           

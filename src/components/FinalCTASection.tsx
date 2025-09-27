@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './FinalCTASection.module.css';
 import landscapeImage from '@/assets/landscape-decoration.png';
 
@@ -16,7 +17,7 @@ const FinalCTASection = () => {
           There's nothing to install. No credit card required. Free for 30 days.
         </h3>
         
-        <button className={styles.ctaButton}>Try for free</button>
+        <Link to="/try-for-free" className={styles.ctaButton}>Try for free</Link>
       </div>
     </section>
   );

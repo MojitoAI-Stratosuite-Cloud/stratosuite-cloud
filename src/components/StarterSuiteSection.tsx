@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './StarterSuiteSection.module.css';
 
 const StarterSuiteSection = () => {
@@ -33,7 +34,7 @@ const StarterSuiteSection = () => {
               <span className={styles.pricingAmount}>$25 USD/user/month</span>{' '}
               <a href="#" className={styles.pricingLink}>See full pricing</a>
             </p>
-            <button className={styles.tryButton}>Try for free</button>
+            <Link to="/try-for-free" className={styles.tryButton}>Try for free</Link>
 
             <div className={styles.featuresList}>
               <div className={styles.featureItem}>

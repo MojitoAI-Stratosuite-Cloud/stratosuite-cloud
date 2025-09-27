@@ -150,9 +150,52 @@
   background: hsl(var(--primary-hover));
 }
 
+@media (max-width: 1200px) {
+  .headerContent {
+    padding: 0 1rem;
+  }
+  
+  .searchContainer {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .logo {
+    font-size: 1.25rem;
+  }
+  
+  .searchContainer {
+    max-width: 150px;
+  }
+  
+  .contactInfo {
+    font-size: 0.75rem;
+  }
+  
+  .headerButton {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .navLinks {
+    gap: 1rem;
+  }
+  
+  .navLink {
+    font-size: 0.875rem;
+  }
+}
+
 @media (max-width: 768px) {
   .headerContent {
     padding: 0 1rem;
+    height: auto;
+    min-height: 4rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
   
   .navLinks {
@@ -165,5 +208,9 @@
   
   .contactInfo {
     display: none;
+  }
+  
+  .headerActions {
+    gap: 0.5rem;
   }
 }
