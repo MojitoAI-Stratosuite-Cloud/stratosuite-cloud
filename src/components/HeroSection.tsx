@@ -54,24 +54,24 @@ const HeroSection = () => {
       {/* Main Value Proposition */}
       <section className={styles.mainSection}>
         <div className={styles.mainContent}>
-          <div className={styles.mainLeft}>
-            <p className={styles.brandLine}>Stratosuite Cloud. The #1 AI CRM.</p>
-            <h2 className={styles.mainTitle}>
-              <span className={styles.titlePrimary}>Grow faster</span>{' '}
-              <span className={styles.titleSecondary}>and work smarter.</span>
-            </h2>
-            <p className={styles.mainDescription}>
-              Start simply with Starter Suite, the all-in-one CRM. 
-              Then scale endlessly with autonomous AI agents, 
-              unified data, and CRM apps together on one 
-              integrated platform. And connect with customers in a 
-              whole new way.
-            </p>
-            <div className={styles.mainActions}>
-              <Link to="/try-for-free" className={styles.primaryButton}>Try for free</Link>
-              <Link to="/watch-demos" className={styles.secondaryButton}>Watch demos</Link>
+            <div className={styles.mainLeft}>
+                <p className={styles.brandLine}>Stratosuite Cloud. The #1 AI CRM.</p>
+                <h2 className={styles.mainTitle}>
+                  <span className={styles.titlePrimary}>Grow faster</span>{' '}
+                  <span className={styles.titleSecondary}>and work smarter.</span>
+                </h2>
+                <p className={styles.mainDescription}>
+                  Start simply with Starter Suite, the all-in-one CRM. 
+                  Then scale endlessly with autonomous AI agents, 
+                  unified data, and CRM apps together on one 
+                  integrated platform. And connect with customers in a 
+                  whole new way.
+                </p>
+                <div className={styles.mainActions}>
+                  <Link to="/try-for-free" className={styles.primaryButton}>Try for free</Link>
+                  <Link to="/watch-demos" className={styles.secondaryButton}>Watch demos</Link>
+                </div>
             </div>
-          </div>
           
           <div className={styles.mainRight}>
             <img src={dashboardMockup} alt="CRM Dashboard" className={styles.dashboardMockup} />
