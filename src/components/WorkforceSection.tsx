@@ -4,22 +4,22 @@ const WorkforceSection = () => {
   return (
     <section className={styles.workforceSection}>
       <div className={styles.workforceContent}>
-          <h2 className={styles.workforceTitle}>
-            Create a limitless workforce.<br />
-            With CloudBot.
-          </h2>
+        <h2 className={styles.workforceTitle}>
+          Create a limitless workforce.<br />
+          With CloudBot.
+        </h2>
+        
+        <p className={styles.workforceDescription}>
+          Create a digital labor force that works alongside your human workforce.{' '}
+          <a href="#" className={styles.workforceLink}>AI agents</a> work 
+          24/7, taking action and providing support to employees and customers. Free your 
+          people to be more productive, so they can focus on more important stuff.
+        </p>
 
-          <p className={styles.workforceDescription}>
-            Create a digital labor force that works alongside your human workforce.{' '}
-            <a href="#" className={styles.workforceLink}>AI agents</a> work 
-            24/7, taking action and providing support to employees and customers. Free your 
-            people to be more productive, so they can focus on more important stuff.
-          </p>
-
-          <div className={styles.workforceActions}>
-            <button className={styles.exploreButton}>Explore CloudBot</button>
-            <button className={styles.calculateButton}>Calculate your ROI</button>
-          </div>
+        <div className={styles.workforceActions}>
+          <button className={styles.exploreButton}>Explore CloudBot</button>
+          <button className={styles.calculateButton}>Calculate your ROI</button>
+        </div>
 
         <div className={styles.trustedBy}>
           <h3 className={styles.trustedTitle}>CloudBot is trusted by:</h3>
